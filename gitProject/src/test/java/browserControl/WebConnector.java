@@ -18,6 +18,12 @@ public class WebConnector {
             driver = new FirefoxDriver(fo);
         } else {
             ChromeOptions co = new ChromeOptions();
+
+            if (ConstantUtils.BROWSER_TYPE.equalsIgnoreCase("headless")){
+                co.addArguments("--headless");
+            }
+
+
             co.addArguments("start-maximized");
             driver = new ChromeDriver(co);
         }
@@ -25,8 +31,7 @@ public class WebConnector {
         // If using implicit wait is has to be defined here.
 //        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
-    public static void closeBrowser(){
-        driver.quit();
+    //public static void closeBrowser(){
+       // driver.quit();
 
     }
-}
