@@ -129,6 +129,7 @@ Create manual BDD scenarios (Positive and Negative) for the "standard_user"  use
 
 ## 10. Automate the BDD scenarios for the Login page for "standard_user" username
 Automate all the manual BDD scenarios you have previously written for the “standard_user” user on the following login page [https://www.saucedemo.com/]
+
 **1. Add the BDD scenarios into a feature file**
    
 <img width="752" alt="1" src="https://github.com/Chitra0605/GitLearning/assets/137562175/d11d86ab-9a63-404a-affa-1ba0a97e6873">
